@@ -1,0 +1,434 @@
+{
+  "metadata": {
+    "test_period": "2023-01-03 to 2026-03-31",
+    "n_assets": 23,
+    "verified_at": "2026-05-31T21:28:23.957637",
+    "grs_method": "Caldara-Iacoviello Daily GPR index (AER 2022), GPRD column, z-score sigmoid normalised to [0,1]",
+    "tc_model": "base 10bps + SRMI kappa=0.1"
+  },
+  "table1_performance": {
+    "MVO": {
+      "ann_ret_pct": 13.2,
+      "sharpe": 0.755,
+      "mdd_pct": 15.84,
+      "calmar": 0.833
+    },
+    "DQN_RL": {
+      "ann_ret_pct": 12.57,
+      "sharpe": 0.901,
+      "mdd_pct": 8.66,
+      "calmar": 1.451
+    },
+    "FinBERT_Proxy": {
+      "ann_ret_pct": 12.42,
+      "sharpe": 0.867,
+      "mdd_pct": 9.25,
+      "calmar": 1.342
+    },
+    "Multi_Factor": {
+      "ann_ret_pct": 11.47,
+      "sharpe": 0.703,
+      "mdd_pct": 10.12,
+      "calmar": 1.133
+    },
+    "MAPS_lite": {
+      "ann_ret_pct": 11.94,
+      "sharpe": 0.836,
+      "mdd_pct": 9.11,
+      "calmar": 1.31
+    },
+    "RMATS_proxy": {
+      "ann_ret_pct": 13.0,
+      "sharpe": 0.953,
+      "mdd_pct": 8.48,
+      "calmar": 1.534
+    },
+    "RMATS_FinBERT": {
+      "ann_ret_pct": 11.82,
+      "sharpe": 0.821,
+      "mdd_pct": 8.93,
+      "calmar": 1.323
+    },
+    "RMATS_r1": {
+      "ann_ret_pct": 11.94,
+      "sharpe": 0.832,
+      "mdd_pct": 8.93,
+      "calmar": 1.337
+    },
+    "RMATS_no_CB": {
+      "ann_ret_pct": 12.71,
+      "sharpe": 0.92,
+      "mdd_pct": 8.39,
+      "calmar": 1.514
+    },
+    "GPR_RuleBased": {
+      "ann_ret_pct": 8.82,
+      "sharpe": 0.5,
+      "mdd_pct": 10.38,
+      "calmar": 0.849
+    }
+  },
+  "table2_event_returns_pct": {
+    "SVB_Crisis": {
+      "MVO": -0.57,
+      "DQN_RL": 2.71,
+      "FinBERT_Proxy": 3.12,
+      "Multi_Factor": 2.83,
+      "MAPS_lite": 2.67,
+      "RMATS_proxy": 3.08,
+      "RMATS_FinBERT": 3.06,
+      "RMATS_r1": 3.06,
+      "RMATS_no_CB": 3.2,
+      "GPR_RuleBased": 2.83
+    },
+    "Israel_Hamas": {
+      "MVO": 6.02,
+      "DQN_RL": 5.68,
+      "FinBERT_Proxy": 5.54,
+      "Multi_Factor": 4.72,
+      "MAPS_lite": 5.68,
+      "RMATS_proxy": 5.84,
+      "RMATS_FinBERT": 5.63,
+      "RMATS_r1": 5.64,
+      "RMATS_no_CB": 5.92,
+      "GPR_RuleBased": 4.99
+    },
+    "US_China_Tech": {
+      "MVO": 3.3,
+      "DQN_RL": 2.11,
+      "FinBERT_Proxy": 1.45,
+      "Multi_Factor": 2.56,
+      "MAPS_lite": 2.23,
+      "RMATS_proxy": 1.89,
+      "RMATS_FinBERT": 1.22,
+      "RMATS_r1": 1.3,
+      "RMATS_no_CB": 1.56,
+      "GPR_RuleBased": -0.27
+    },
+    "MidEast_Escalation": {
+      "MVO": 0.28,
+      "DQN_RL": 0.69,
+      "FinBERT_Proxy": 1.15,
+      "Multi_Factor": -0.52,
+      "MAPS_lite": 0.62,
+      "RMATS_proxy": 1.03,
+      "RMATS_FinBERT": 1.05,
+      "RMATS_r1": 1.05,
+      "RMATS_no_CB": 1.05,
+      "GPR_RuleBased": 1.11
+    },
+    "Rate_Cut_Pivot": {
+      "MVO": 4.78,
+      "DQN_RL": 4.85,
+      "FinBERT_Proxy": 5.05,
+      "Multi_Factor": 4.53,
+      "MAPS_lite": 4.93,
+      "RMATS_proxy": 5.22,
+      "RMATS_FinBERT": 4.94,
+      "RMATS_r1": 4.95,
+      "RMATS_no_CB": 5.14,
+      "GPR_RuleBased": 4.25
+    },
+    "Iran_Crisis": {
+      "MVO": 6.46,
+      "DQN_RL": 3.37,
+      "FinBERT_Proxy": 3.64,
+      "Multi_Factor": 4.44,
+      "MAPS_lite": 2.59,
+      "RMATS_proxy": 2.91,
+      "RMATS_FinBERT": 3.36,
+      "RMATS_r1": 3.37,
+      "RMATS_no_CB": 3.45,
+      "GPR_RuleBased": 2.92
+    },
+    "Trade_War_2025": {
+      "MVO": 3.76,
+      "DQN_RL": 3.12,
+      "FinBERT_Proxy": 2.84,
+      "Multi_Factor": 3.85,
+      "MAPS_lite": 2.84,
+      "RMATS_proxy": 3.03,
+      "RMATS_FinBERT": 2.07,
+      "RMATS_r1": 2.14,
+      "RMATS_no_CB": 2.81,
+      "GPR_RuleBased": 1.99
+    },
+    "Taiwan_Strait_excl": {
+      "MVO": 3.84,
+      "DQN_RL": 3.64,
+      "FinBERT_Proxy": 3.76,
+      "Multi_Factor": 3.68,
+      "MAPS_lite": 3.81,
+      "RMATS_proxy": 3.87,
+      "RMATS_FinBERT": 3.66,
+      "RMATS_r1": 3.68,
+      "RMATS_no_CB": 3.78,
+      "GPR_RuleBased": 3.25
+    },
+    "US_Election_excl": {
+      "MVO": 0.59,
+      "DQN_RL": -2.49,
+      "FinBERT_Proxy": -2.9,
+      "Multi_Factor": -2.43,
+      "MAPS_lite": -2.24,
+      "RMATS_proxy": -2.91,
+      "RMATS_FinBERT": -2.83,
+      "RMATS_r1": -2.83,
+      "RMATS_no_CB": -2.85,
+      "GPR_RuleBased": -2.84
+    }
+  },
+  "convergence_finbert": {
+    "median": 1.0,
+    "mean": 1.51,
+    "max": 3,
+    "pct_leq_2": 94.9,
+    "n_steps": 39,
+    "distribution": {
+      "1": 21,
+      "2": 16,
+      "3": 2
+    }
+  },
+  "convergence_r1": {
+    "median": 1.0,
+    "mean": 1.0,
+    "max": 1,
+    "pct_leq_2": 100.0,
+    "n_steps": 39,
+    "distribution": {
+      "1": 39
+    }
+  },
+  "convergence_proxy": {
+    "median": 1.0,
+    "mean": 1.33,
+    "max": 3,
+    "pct_leq_2": 97.4,
+    "n_steps": 39,
+    "distribution": {
+      "1": 27,
+      "2": 11,
+      "3": 1
+    }
+  },
+  "r1_ablation": {
+    "RMATS_FinBERT_sharpe": 0.821,
+    "RMATS_r1_sharpe": 0.832,
+    "delta_sharpe": -0.0106
+  },
+  "comment2_maps_comparison": {
+    "MAPS_lite_sharpe": 0.836,
+    "RMATS_FinBERT_sharpe": 0.821,
+    "delta_sharpe": -0.0146
+  },
+  "comment3_ks_test": {
+    "grs_event_mean": 0.588,
+    "grs_nonevent_mean": 0.5143,
+    "ks_stat": 0.1464,
+    "ks_pval": 0.0001,
+    "mw_stat": 96947.5,
+    "mw_pval": 0.0,
+    "event_mean_percentile": 58.3
+  },
+  "transaction_costs_bps_per_cycle": {
+    "MVO": 5.39,
+    "DQN_RL": 1.0,
+    "FinBERT_Proxy": 1.53,
+    "Multi_Factor": 2.93,
+    "MAPS_lite": 1.15,
+    "RMATS_proxy": 1.06,
+    "RMATS_FinBERT": 1.48,
+    "RMATS_r1": 1.39,
+    "RMATS_no_CB": 0.5,
+    "GPR_RuleBased": 5.15
+  },
+  "subperiod_performance": {
+    "event_windows": {
+      "MVO": {
+        "ann_ret_pct": 21.76,
+        "sharpe": 1.372,
+        "mdd_pct": 6.83,
+        "n_days": 300
+      },
+      "DQN_RL": {
+        "ann_ret_pct": 20.38,
+        "sharpe": 1.464,
+        "mdd_pct": 8.56,
+        "n_days": 300
+      },
+      "FinBERT_Proxy": {
+        "ann_ret_pct": 20.65,
+        "sharpe": 1.43,
+        "mdd_pct": 9.25,
+        "n_days": 300
+      },
+      "Multi_Factor": {
+        "ann_ret_pct": 20.26,
+        "sharpe": 1.372,
+        "mdd_pct": 8.59,
+        "n_days": 300
+      },
+      "MAPS_lite": {
+        "ann_ret_pct": 19.44,
+        "sharpe": 1.346,
+        "mdd_pct": 8.96,
+        "n_days": 300
+      },
+      "RMATS_proxy": {
+        "ann_ret_pct": 20.86,
+        "sharpe": 1.571,
+        "mdd_pct": 7.52,
+        "n_days": 300
+      },
+      "RMATS_FinBERT": {
+        "ann_ret_pct": 19.22,
+        "sharpe": 1.342,
+        "mdd_pct": 8.93,
+        "n_days": 300
+      },
+      "RMATS_r1": {
+        "ann_ret_pct": 19.4,
+        "sharpe": 1.356,
+        "mdd_pct": 8.93,
+        "n_days": 300
+      },
+      "RMATS_no_CB": {
+        "ann_ret_pct": 20.99,
+        "sharpe": 1.526,
+        "mdd_pct": 8.36,
+        "n_days": 300
+      },
+      "GPR_RuleBased": {
+        "ann_ret_pct": 15.84,
+        "sharpe": 0.981,
+        "mdd_pct": 10.39,
+        "n_days": 300
+      }
+    },
+    "non_event_windows": {
+      "MVO": {
+        "ann_ret_pct": 8.47,
+        "sharpe": 0.4,
+        "mdd_pct": 15.15,
+        "n_days": 512
+      },
+      "DQN_RL": {
+        "ann_ret_pct": 8.24,
+        "sharpe": 0.506,
+        "mdd_pct": 8.81,
+        "n_days": 512
+      },
+      "FinBERT_Proxy": {
+        "ann_ret_pct": 7.86,
+        "sharpe": 0.461,
+        "mdd_pct": 9.63,
+        "n_days": 512
+      },
+      "Multi_Factor": {
+        "ann_ret_pct": 6.62,
+        "sharpe": 0.285,
+        "mdd_pct": 10.12,
+        "n_days": 512
+      },
+      "MAPS_lite": {
+        "ann_ret_pct": 7.76,
+        "sharpe": 0.462,
+        "mdd_pct": 8.44,
+        "n_days": 512
+      },
+      "RMATS_proxy": {
+        "ann_ret_pct": 8.64,
+        "sharpe": 0.543,
+        "mdd_pct": 9.19,
+        "n_days": 512
+      },
+      "RMATS_FinBERT": {
+        "ann_ret_pct": 7.71,
+        "sharpe": 0.448,
+        "mdd_pct": 9.84,
+        "n_days": 512
+      },
+      "RMATS_r1": {
+        "ann_ret_pct": 7.79,
+        "sharpe": 0.457,
+        "mdd_pct": 9.79,
+        "n_days": 512
+      },
+      "RMATS_no_CB": {
+        "ann_ret_pct": 8.12,
+        "sharpe": 0.496,
+        "mdd_pct": 9.81,
+        "n_days": 512
+      },
+      "GPR_RuleBased": {
+        "ann_ret_pct": 4.9,
+        "sharpe": 0.133,
+        "mdd_pct": 11.16,
+        "n_days": 512
+      }
+    },
+    "full_period": {
+      "MVO": {
+        "ann_ret_pct": 13.2,
+        "sharpe": 0.755,
+        "mdd_pct": 15.84,
+        "n_days": 812
+      },
+      "DQN_RL": {
+        "ann_ret_pct": 12.57,
+        "sharpe": 0.901,
+        "mdd_pct": 8.66,
+        "n_days": 812
+      },
+      "FinBERT_Proxy": {
+        "ann_ret_pct": 12.42,
+        "sharpe": 0.867,
+        "mdd_pct": 9.25,
+        "n_days": 812
+      },
+      "Multi_Factor": {
+        "ann_ret_pct": 11.47,
+        "sharpe": 0.703,
+        "mdd_pct": 10.12,
+        "n_days": 812
+      },
+      "MAPS_lite": {
+        "ann_ret_pct": 11.94,
+        "sharpe": 0.836,
+        "mdd_pct": 9.11,
+        "n_days": 812
+      },
+      "RMATS_proxy": {
+        "ann_ret_pct": 13.0,
+        "sharpe": 0.953,
+        "mdd_pct": 8.48,
+        "n_days": 812
+      },
+      "RMATS_FinBERT": {
+        "ann_ret_pct": 11.82,
+        "sharpe": 0.821,
+        "mdd_pct": 8.93,
+        "n_days": 812
+      },
+      "RMATS_r1": {
+        "ann_ret_pct": 11.94,
+        "sharpe": 0.832,
+        "mdd_pct": 8.93,
+        "n_days": 812
+      },
+      "RMATS_no_CB": {
+        "ann_ret_pct": 12.71,
+        "sharpe": 0.92,
+        "mdd_pct": 8.39,
+        "n_days": 812
+      },
+      "GPR_RuleBased": {
+        "ann_ret_pct": 8.82,
+        "sharpe": 0.5,
+        "mdd_pct": 10.38,
+        "n_days": 812
+      }
+    }
+  }
+}
